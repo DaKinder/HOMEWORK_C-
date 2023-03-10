@@ -4,23 +4,23 @@
 
 using System.ComponentModel.DataAnnotations;
 
-Console.WriteLine("Hello my friend))");
-
-Console.Write("Input first number: ");
+Console.WriteLine("Здравствуй, дорогой друг))");
+System.Console.WriteLine("Программа поиска макисмального числа");
+Console.WriteLine("Введи перво число: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Input second number: ");
+Console.Write("Введи второе число: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
 
 if (num1 > num2)
 {
-    Console.WriteLine($"maximum number is: {num1}, minimum number is: {num2}");
+    Console.WriteLine($"Число: {num1} больше чем: {num2}");
 }
 else if (num1 < num2)
 {
-    Console.WriteLine($"maximum number is: {num2}, minimum number is: {num1}");
+    Console.WriteLine($"Число: {num2}, больше чем: {num1}");
 }
-else Console.WriteLine($"These umbers are equal");
+else Console.WriteLine($"Введённые числа равны");
 
 Console.ReadKey();
 Console.Clear();
@@ -29,14 +29,14 @@ Console.Clear();
 //Задача 4: 
 //Напишите программу, которая принимает на вход три числа
 //и выдаёт максимальное из этих чисел.
+System.Console.WriteLine("Программа поиска максимального числа из трёх");
+Console.WriteLine("Введите 3 числа!");
 
-Console.Write("Input 3 numbers!");
-
-Console.Write("Input first number: ");
+Console.Write("Введите первое число: ");
 int number1 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input second number: ");
+Console.Write("Введите второе число: ");
 int number2 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input third number: ");
+Console.Write("Введите третье число: ");
 int number3 = Convert.ToInt32(Console.ReadLine());
 
 int max;
@@ -50,7 +50,7 @@ if (max < number3)
 {
     max = number3;
 }
-Console.WriteLine($"maximum number is: {max}");
+Console.WriteLine($"Максимальное число будет: {max}");
 
 Console.ReadKey();
 Console.Clear();
@@ -64,9 +64,9 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 if (number % 2 > 0)
 {
-    Console.WriteLine("It is an odd number");
+    Console.WriteLine("Это нечётное число");
 }
-else Console.WriteLine("It is an even number");
+else Console.WriteLine("Это чётное число");
 
 Console.ReadKey();
 Console.Clear();
